@@ -1,0 +1,137 @@
+
+/*---Header--*/
+
+.header {
+    background: #e3e3e3;
+    padding-top: 20px;
+}
+.logonav {
+    max-width: 100%;
+    height: 93px;
+}
+.navwrapper ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 33px;
+    font-size: 26px;
+    padding-top: 15px;
+
+}
+.navwrapper ul li a{
+	text-decoration: none;
+	color: tomato;
+}
+.navwrapper ul li a:hover {
+	color: black;
+}
+
+
+.menubtn {
+    border: none;
+    background: burlywood;
+    font-size: 25px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.Resposivebtn {
+    display: none;
+}
+
+/*Hero section*/
+
+section.section-hero {
+    background: #b3c8e3;
+    /* margin: 0 auto; */
+    position: relative;
+    height: 500px;
+}
+
+.hero-contents {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+
+/*services section*/
+
+h1.ser-heading {
+    text-align: center;
+    font-size: 60px;
+    padding: 10px 0px;
+}
+
+.service-wrapper {
+    background: #d1c5c5;
+    text-align: center;
+    padding: 10px 10px;
+    border-radius: 3px;
+    position: relative;
+    z-index: 1;
+}
+
+.service-wrapper:before {
+    position: absolute;
+    content: '''';
+    background: #ce6be1;
+    height: 100%;
+    width: 0%;
+    left: 0;
+    top: 0;
+    transition: 1s;
+    z-index: -1;
+}
+
+
+.service-wrapper:hover:before{
+width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 768px){
+
+  .navwrapper ul {
+  	text-align: center;
+  }
+  .navwrapper ul li{
+  	display: block;
+  }
+  .navbtn {
+    text-align: center;
+}
+.Resposivebtn{
+	display: block;
+	float: right;
+}
+.navwrapper{
+	display: none;
+}
+
+.navwrapper.mobile{
+	display: block;
+}
+}
+	
+
